@@ -17,12 +17,17 @@
     }
     header {
       background-color: #d1007f;
-      padding: 20px;
+      padding: 20px 20px 10px;
       text-align: center;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+    header h1::before,
+    header h1::after {
+      content: "🔥🔥🔥 ";
+      font-size: 2rem;
     }
     .intro, .about, .gallery, .cta, .video {
       padding: 40px 20px;
@@ -30,15 +35,22 @@
       margin: auto;
       text-align: center;
     }
-    .cta a, header a {
+    .cta a, .top-button {
       background-color: #ff007f;
       color: white;
-      padding: 15px 30px;
+      padding: 18px 36px;
+      font-size: 1.2rem;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
+      animation: shake 1.5s infinite;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
     }
     .gallery-grid {
       display: grid;
@@ -69,23 +81,30 @@
 <body>
   <header>
     <h1>JazminaBrown</h1>
-    <p>Live on LiveJasmin</p>
-    <a href="https://www.livejasmin.com/en/member/JazminaBrown" target="_blank">Enter My LiveJasmin Room</a>
   </header>
 
   <section class="intro">
+    <a href="https://www.livejasmin.com/JazminaBrown?refererid=p_JazminaBrown" class="top-button" target="_blank">Enter My LiveJasmin Room</a>
     <h2>Your Ultimate Fantasy Starts Here</h2>
     <p>Welcome to my world! I'm JazminaBrown – a stunning 44-year-old cam model in amazing shape, with curves you'll never forget and a personality to match. I speak English and Hungarian, and I love exploring your desires during my all-inclusive shows.</p>
   </section>
 
-  <section class="video">
-    <h2>Teaser Video</h2>
-    <p>A little taste of what it's like to be in my room...</p>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <a href="https://www.livejasmin.com/JazminaBrown?refererid=p_JazminaBrown" target="_blank">
+    <div data-awe-container-id="object_container_left" style="display:inline-block;width:250px;height:250px;"></div>
+  </a>
+  <div style="flex: 1; max-width: 500px;">
     <video controls poster="teaser1.jpg" style="max-width: 100%; border-radius: 10px;">
       <source src="jazmina-teaser.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </section>
+  </div>
+  <a href="https://www.livejasmin.com/JazminaBrown?refererid=p_JazminaBrown" target="_blank">
+    <div data-awe-container-id="object_container_right" style="display:inline-block;width:250px;height:250px;"></div>
+  </a>
+</div>
+<script src="https://wptcd.com/embed/discount?dimension=250x250&c=object_container_left&categoryName=girl&psid=Allfans02&pstool=429_0&siteId=jasmin&cobrandId=&psprogram=revs&campaign_id=&ms_notrack=1&subAffId={SUBAFFID}"></script>
+<script src="https://wptcd.com/embed/discount?dimension=250x250&c=object_container_right&categoryName=girl&psid=Allfans02&pstool=429_0&siteId=jasmin&cobrandId=&psprogram=revs&campaign_id=&ms_notrack=1&subAffId={SUBAFFID}"></script>
 
   <section class="about">
     <h2>What I Offer</h2>
@@ -109,7 +128,7 @@
 
   <section class="cta">
     <h2>Watch Me Live Now</h2>
-    <a href="https://www.livejasmin.com/en/member/JazminaBrown" target="_blank">Enter My LiveJasmin Room</a>
+    <a href="https://www.livejasmin.com/JazminaBrown?refererid=p_JazminaBrown" target="_blank">Enter My LiveJasmin Room</a>
   </section>
 
   <footer>
